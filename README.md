@@ -1,3 +1,6 @@
+## Overview
+Started working on this after [the non-AI experiment](https://github.com/natedugg/icapital-no-ai) at around 3:20pm on May 11, 2025. Stopped working on it a little before 5:30pm, with some time afterwards spent trying to get the Github repository situated.
+
 
 ## Backend (Ruby on Rails)
 
