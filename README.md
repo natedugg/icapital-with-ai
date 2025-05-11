@@ -33,7 +33,7 @@ yarn start        # or npm start
 4. **Usage**
 - Open http://localhost:3001 in your browser.
 - Fill out the investor form and upload at least one document.
-- On submission, data is saved in MySQL and files in backend/public/uploads/:investor_id/.
+- On submission, data is saved in MySQL and files in `backend/public/uploads/:investor_id/`.
 
 5. **Notes**
 - CORS is configured to allow requests from any origin to /api/*.
