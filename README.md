@@ -14,7 +14,7 @@ Started working on this after [the non-AI experiment](https://github.com/natedug
 1. **Clone the repo**
 ```bash
 git clone <repo-url>
-cd icapital_partner_import_app
+cd icapital-with-ai
 ```
 
 2. **Back end setup**
