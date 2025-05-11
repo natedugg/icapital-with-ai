@@ -36,5 +36,5 @@ yarn start        # or npm start
 - On submission, data is saved in MySQL and files in `backend/public/uploads/:investor_id/`.
 
 5. **Notes**
-- CORS is configured to allow requests from any origin to /api/*.
+- CORS is configured to allow requests from any origin to `/api/*`.
 - Uploaded files are limited to 3 MB by default (Rails default middleware).
