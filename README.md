@@ -2,7 +2,7 @@
 ## Backend (Ruby on Rails)
 
 ### Prerequisites
-- Ruby 3.1.2
+- Ruby 3.x
 - Rails 7.0.x
 - MySQL server (e.g. MySQL 8.0)
 
