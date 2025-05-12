@@ -5,7 +5,7 @@ It turns out that without any help from AI, I ended up spending most of the allo
 
 After stopping work on the non-AI assisted attempt, I started this attempt at around 3:20pm the same day (May 11, 2025) and stopped working on it around 5:30pm.
 
-**I understand that this was not what was requested, and that all of this might be disregarded in favor of the first attempt. That's ok. I'm just hoping that this gives you more, and hopefully positive insight into my capability as an engineer.**
+**I understand that this was not what was requested, and that all of this might be disregarded in favor of the first attempt. That's ok. I'm just hoping that this gives you some hopefully positive insight into my capability as an engineer.**
 
 ## Vibes All Day!
 
