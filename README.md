@@ -11,11 +11,10 @@ After stopping work on the non-AI assisted attempt, I started this attempt at ar
 
 Given the fact that I didn't get far at all with my first attempt to build this project without AI, I decided to see how far I could get with it. With ChatGPT's help, I was, in fact, able to get most of the basic intended functionality working.
 
-I found that AI dramatically sped up the application setup/configuration phase on both the front and back ends, allowing me to dive into the actual implementation much more quickly. That being said, there were some manual configuration issues that came up after trying to use the ChatGPT-generated files, since ChatGPT didn't include all of the required installation files to setup working React and Rails applications.
+I found that AI dramatically sped up the application setup/configuration phase on both the front and back ends, allowing me to dive into the actual implementation much more quickly. That being said, there were some manual configuration issues that came up after trying to use the ChatGPT-generated files, since ChatGPT didn't include all of the required installation files to set up working React and Rails applications.
 
 My process was iterative, which means I started by asking ChatGPT to build an application satisfying the most basic requirements. Then I added functionality piece by piece, verifying each step as I went.
 
-**Result**
 I was left with a basically functional full-stack application. I didn't spend any time trying to add styling to the user interface, but I believe that ChatGPT could have made those improvements with a few more simple prompts. Additionally, I believe that with more time, every item listed in the **What's Left** section below could have been addressed (or assisted) by an AI with very careful, specific prompting.
 
 ## What's Left
