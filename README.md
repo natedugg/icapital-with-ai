@@ -28,7 +28,7 @@ The ChatGPT-assisted development process got me further than I was able to get o
   - As described in the [README for the non-AI version](https://github.com/natedugg/icapital-no-ai/blob/main/README.md#whats-left), a far more scalable solution would be to use cloud storage, like AWS S3. This would allow for multi-part uploads and downloads using pre-signed URLs, which would support very large files, as well as resumable downloads and trackable upload progress to facilitate an upload progress bar on the investor form.
 - Detecting duplicate investor entries via matching names/SSNs (also missing from the non-AI attempt). As previously described, my solution would be to add the ability for admins to merge accounts based on matching values
 - **Unit Tests**
-  - In hindsight, 
+  - In hindsight, I should have included this in my prompting to the AI from the beginning, but I was perhaps too focused on getting the MVP working quickly. In any case, I believe that the AI could generate tests as needed, unit tests in particular. Building end-to-end integration tests might be more involved, but still essential.
 
 ## Screen shots
 
