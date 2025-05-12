@@ -41,12 +41,6 @@ The ChatGPT-assisted development process got me further than I was able to get o
 
 ## Configuration
 
-1. **Clone the repo**
-```bash
-git clone <repo-url>
-cd icapital-with-ai
-```
-
 ## Backend (Ruby on Rails)
 
 ### Prerequisites
