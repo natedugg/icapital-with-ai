@@ -23,7 +23,7 @@ I was left with a basically functional full-stack application. I didn't spend an
 The ChatGPT-assisted development process got me further than I was able to get on my own, but after two hours there was still plenty of improvements that could have been made. Some of the [improvements from the non-AI version](https://github.com/natedugg/icapital-no-ai/blob/main/README.md#whats-left) would also apply here, and I've made note of those cases.
 
 - Authentication / authorization: like the non-AI version, this version is also missing authentication using JWT session tokens.
-- Use cloud storage, like AWS S3, instead of local file storage for uploads
+- Use of cloud storage, like AWS S3, instead of local file storage for uploads
 - Detection of duplicate investor entries via matching names/SSNs (also missing from the non-AI attempt). As previously described, my solution would be to add the ability for admins to merge accounts based on matching values
 - Uploaded file preview / download: uploaded files are currently saved to `backend/public/uploads/:investor_id/`. I will admit that I wasted some time at the end trying to expose that directory to the web server to enable direct links to the uploaded files, but I couldn't figure it out in time and had to give up.
 - **Unit Tests**
