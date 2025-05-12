@@ -23,14 +23,12 @@ I was left with a basically functional full-stack application. I didn't spend an
 The ChatGPT-assisted development process got me further than I was able to get on my own, but after two hours there was still plenty of improvements that could have been made. Some of the [improvements from the non-AI version](https://github.com/natedugg/icapital-no-ai/blob/main/README.md#whats-left) would also apply here, and I've made note of those cases.
 
 - Authentication / authorization: like the non-AI version, this version is also missing authentication using JWT session tokens.
-- Support for large file uploads / downloads
-  - Although file uploads are supported here, it only works with small files. Network bandwidth and local file system constraints currently preclude support for large files.
-  - As described in the [README for the non-AI version](https://github.com/natedugg/icapital-no-ai/blob/main/README.md#whats-left), a far more scalable solution would be to use cloud storage, like AWS S3. This would allow for multi-part uploads and downloads using pre-signed URLs, which would support very large files, as well as resumable downloads and trackable upload progress to facilitate an upload progress bar on the investor form.
-- Detecting duplicate investor entries via matching names/SSNs (also missing from the non-AI attempt). As previously described, my solution would be to add the ability for admins to merge accounts based on matching values
+- Use cloud storage, like AWS S3, instead of local file storage for uploads
+- Detection of duplicate investor entries via matching names/SSNs (also missing from the non-AI attempt). As previously described, my solution would be to add the ability for admins to merge accounts based on matching values
 - **Unit Tests**
   - In hindsight, I should have included this in my prompting to the AI from the beginning, but I was perhaps too focused on getting the MVP working quickly. In any case, I believe that the AI could generate these tests as needed.
 - **End-to-End Integration Tests**
-  - My guess is that there might be more human involvement required to build out end-to-end tests.
+  - My guess is that there might be more human involvement required to build out end-to-end tests, as opposed to unit tests
 
 ## Screen shots
 
