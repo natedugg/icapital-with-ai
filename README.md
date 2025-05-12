@@ -1,9 +1,9 @@
 ## Overview
-This repository contains my second attempt to complete the [iCapital Identity Team Engineer Challenge](https://gist.github.com/pm-builder/979dcf6300d4dff1cdfd2ee4808af091), which is supposed to be completed in two hours. My first attempt is [located here](https://github.com/natedugg/icapital-no-ai), and during this attempt, I did **not** employ the help of any kind of artificial intelligence.
+This repository contains my second attempt to complete the [iCapital Identity Team Engineer Challenge](https://gist.github.com/pm-builder/979dcf6300d4dff1cdfd2ee4808af091), which is supposed to be completed in two hours. My first attempt is [located here](https://github.com/natedugg/icapital-no-ai), and during that attempt, I did **not** employ the help of any kind of artificial intelligence.
 
 It turns out that without any help from AI, I ended up spending most of the allotted time in the setup / configuration phase, giving me very little time to actually build the required features. This inspired me to try again, but this time using ChatGPT. Turns out I was able to include a lot more functionality than I did with the non-AI version!
 
-After stopping work on the non-AI assisted attempt, I started this attempt at around 3:20pm the same day (May 11, 2025) and stopped working on it around 5:30pm. I wanted to apply the same two hour constraint to this attempt to make it a fair comparison.
+After stopping work on the non-AI assisted attempt, I started this attempt at around 3:30pm the same day (May 11, 2025) and stopped working on it around 5:30pm. I wanted to apply the same two hour constraint to this attempt to make it a fair comparison.
 
 **I understand that this was not what was requested, and that all of this might be disregarded in favor of the first attempt. That's ok. I'm just hoping that this gives you more insight into my capability as an engineer.**
 
@@ -28,7 +28,9 @@ The ChatGPT-assisted development process got me further than I was able to get o
   - As described in the [README for the non-AI version](https://github.com/natedugg/icapital-no-ai/blob/main/README.md#whats-left), a far more scalable solution would be to use cloud storage, like AWS S3. This would allow for multi-part uploads and downloads using pre-signed URLs, which would support very large files, as well as resumable downloads and trackable upload progress to facilitate an upload progress bar on the investor form.
 - Detecting duplicate investor entries via matching names/SSNs (also missing from the non-AI attempt). As previously described, my solution would be to add the ability for admins to merge accounts based on matching values
 - **Unit Tests**
-  - In hindsight, I should have included this in my prompting to the AI from the beginning, but I was perhaps too focused on getting the MVP working quickly. In any case, I believe that the AI could generate tests as needed, unit tests in particular. Building end-to-end integration tests might be more involved, but still essential.
+  - In hindsight, I should have included this in my prompting to the AI from the beginning, but I was perhaps too focused on getting the MVP working quickly. In any case, I believe that the AI could generate these tests as needed.
+- **End-to-End Integration Tests**
+  - My guess is that there might be more human involvement required to build out end-to-end tests.
 
 ## Screen shots
 
