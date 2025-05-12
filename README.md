@@ -3,9 +3,9 @@ This repository contains my second attempt to complete the [iCapital Identity Te
 
 It turns out that without any help from AI, I ended up spending most of the allotted time in the setup / configuration phase, giving me very little time to actually build the required features. This inspired me to try again, but this time using ChatGPT. Turns out I was able to include a lot more functionality than I did with the non-AI version!
 
-After stopping work on the non-AI assisted attempt, I started this attempt at around 3:30pm the same day (May 11, 2025) and stopped working on it around 5:30pm. I wanted to apply the same two hour constraint to this attempt to make it a fair comparison.
+After stopping work on the non-AI assisted attempt, I started this attempt at around 3:20pm the same day (May 11, 2025) and stopped working on it around 5:30pm.
 
-**I understand that this was not what was requested, and that all of this might be disregarded in favor of the first attempt. That's ok. I'm just hoping that this gives you more insight into my capability as an engineer.**
+**I understand that this was not what was requested, and that all of this might be disregarded in favor of the first attempt. That's ok. I'm just hoping that this gives you more, and hopefully positive insight into my capability as an engineer.**
 
 ## Vibes All Day!
 
