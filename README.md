@@ -11,20 +11,12 @@ After stopping work on the non-AI assisted attempt, I started this attempt at ar
 
 Given the fact that I didn't get far at all with my first attempt to build this project without AI, I decided to see how far I could get with it. With ChatGPT's help, I was, in fact, able to get most of the basic intended functionality working.
 
-I found that AI dramatically sped up the application setup/configuration phase on both the front and back ends, allowing me to dive into the actual implementation much more quickly.
+I found that AI dramatically sped up the application setup/configuration phase on both the front and back ends, allowing me to dive into the actual implementation much more quickly. That being said, there were some manual configuration issues that came up after trying to use the ChatGPT-generated files, since ChatGPT didn't include all of the required installation files to setup working React and Rails applications.
 
-**AI Prompts**
-1. I started by simply copying the stated requirements from the project instructions page into ChatGPT (using `o4-mini-high`), with additional specific instructions to use Ruby on Rails as the back end API, React with Typescript as the front end.
-  - this generated a project structure with a root folder called `icapital_partner_import_app` containing code for a Rails + React/TypeScript import application (split into "backend" and "frontend" folders), complete with database migrations, models, controller logic for file uploads, a CORS setup, and a simple front-end form component called `InvestorForm`, which only allowed users to add new investor profiles.
-2. ChatGPT initially assumed that I wanted to use a Postgres database, since I didn't specify at the beginning. I entered another prompt to switch the application to use MySQL, which is a database I already have in my local development environment.
-3. I found that some Rails installation files were missing (e.g. the `/bin` folder) from the ChatGPT-generated Rails application. I created a Rails app from scratch separately, then just copied the necessary files into the `backend` folder. That fixed the ChatGPT-generated Rails app and allowed it to start.
-3. Next, I prompted ChatGPT to add a new component on the front end to show the list of investors in a table, with each row linking to an editable form for that investor account. In addition, I asked for a link on the list page to a new empty form for creating new investor accounts.
-  - this worked, but somehow the file upload functionality got lost during the update; I had to ask ChatGPT to restore the upload functionality to the investor form
-4. Then I asked ChatGPT to check the "Keep" checkbox to determine if existing files linked to an investor would be kept when the form was saved. A separate prompt was required to get ChatGPT to also update the controller logic in the API to actually remove files if necessary.
-5. Next, I had ChatGPT change the front-end route for adding investors from `/add` to `/investors/add`, and the route for editing investors from `/:id` to `/investors/:id`. This added some clarity to the routes themselves, and made it easier to distinguish different types of endpoints in the future.
+My process was iterative, which means I started by asking ChatGPT to build an application satisfying the most basic requirements. Then I added functionality piece by piece, verifying each step as I went.
 
 **Result**
-I was left with a basically functional full-stack application. I didn't spend any time trying to add styling to the user interface, but I believe that ChatGPT could have made those improvements with a few more simple prompts. Additionally, I believe that with more time than the allotted two hours, every item listed in the **What's Left** section below could have been included by ChatGPT with very careful, specific prompting.
+I was left with a basically functional full-stack application. I didn't spend any time trying to add styling to the user interface, but I believe that ChatGPT could have made those improvements with a few more simple prompts. Additionally, I believe that with more time, every item listed in the **What's Left** section below could have been addressed (or assisted) by an AI with very careful, specific prompting.
 
 ## What's Left
 
@@ -34,7 +26,9 @@ The ChatGPT-assisted development process got me further than I was able to get o
 - Support for large file uploads / downloads
   - Although file uploads are supported here, it only works with small files. Network bandwidth and local file system constraints currently preclude support for large files.
   - As described in the [README for the non-AI version](https://github.com/natedugg/icapital-no-ai/blob/main/README.md#whats-left), a far more scalable solution would be to use cloud storage, like AWS S3. This would allow for multi-part uploads and downloads using pre-signed URLs, which would support very large files, as well as resumable downloads and trackable upload progress to facilitate an upload progress bar on the investor form.
-- 
+- Detecting duplicate investor entries via matching names/SSNs (also missing from the non-AI attempt). As previously described, my solution would be to add the ability for admins to merge accounts based on matching values
+- **Unit Tests**
+  - In hindsight, 
 
 ## Screen shots
 
