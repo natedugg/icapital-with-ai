@@ -25,6 +25,7 @@ The ChatGPT-assisted development process got me further than I was able to get o
 - Authentication / authorization: like the non-AI version, this version is also missing authentication using JWT session tokens.
 - Use cloud storage, like AWS S3, instead of local file storage for uploads
 - Detection of duplicate investor entries via matching names/SSNs (also missing from the non-AI attempt). As previously described, my solution would be to add the ability for admins to merge accounts based on matching values
+- Uploaded file preview / download: uploaded files are currently saved to `backend/public/uploads/:investor_id/`. I will admit that I wasted some time at the end trying to expose that directory to the web server to enable direct links to the uploaded files, but I couldn't figure it out in time and had to give up.
 - **Unit Tests**
   - In hindsight, I should have included this in my prompting to the AI from the beginning, but I was perhaps too focused on getting the MVP working quickly. In any case, I believe that the AI could generate these tests as needed.
 - **End-to-End Integration Tests**
