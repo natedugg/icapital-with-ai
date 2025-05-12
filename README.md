@@ -1,7 +1,11 @@
 ## Overview
-Started working on this after [the non-AI experiment](https://github.com/natedugg/icapital-no-ai) at around 3:20pm on May 11, 2025. Stopped working on it a little before 5:30pm, with some time afterwards spent trying to get the Github repository situated.
+This repository contains my second attempt to complete the [iCapital Identity Team Engineer Challenge](https://gist.github.com/pm-builder/979dcf6300d4dff1cdfd2ee4808af091), which is supposed to be completed in two hours. My first attempt is [located here](https://github.com/natedugg/icapital-no-ai), and during this attempt, I did **not** employ the help of any kind of artificial intelligence.
 
-For this version, I used ChatGPT as an aide. I managed to include a lot more functionality than I did with the non-AI version, with some expected sacrifices in appearance.
+It turns out that without any help from AI, I ended up spending most of the allotted time in the setup / configuration phase, giving me very little time to actually build the required features. This inspired me to try again, but this time using ChatGPT. Turns out I was able to include a lot more functionality than I did with the non-AI version!
+
+After stopping work on the non-AI assisted attempt, I started this attempt at around 3:20pm the same day and stopped working on it around 5:30pm. I wanted to apply the same two hour constraint to this attempt to make it a fair comparison.
+
+**I understand that this was not what was requested, and that all of this might be disregarded in favor of the first attempt. That's ok. I'm just hoping that this gives you more insight into my capability as an engineer.**
 
 ## Vibes All Day!
 
@@ -15,9 +19,22 @@ I found that AI dramatically sped up the application setup/configuration phase o
 2. ChatGPT initially assumed that I wanted to use a Postgres database, since I didn't specify at the beginning. I entered another prompt to switch the application to use MySQL, which is a database I already have in my local development environment.
 3. I found that some Rails installation files were missing (e.g. the `/bin` folder) from the ChatGPT-generated Rails application. I created a Rails app from scratch separately, then just copied the necessary files into the `backend` folder. That fixed the ChatGPT-generated Rails app and allowed it to start.
 3. Next, I prompted ChatGPT to add a new component on the front end to show the list of investors in a table, with each row linking to an editable form for that investor account. In addition, I asked for a link on the list page to a new empty form for creating new investor accounts.
-  - this worked, but somehow the file upload functionality got lost during the update; I had to ask ChatGPT to restore it to the investor form
+  - this worked, but somehow the file upload functionality got lost during the update; I had to ask ChatGPT to restore the upload functionality to the investor form
 4. Then I asked ChatGPT to check the "Keep" checkbox to determine if existing files linked to an investor would be kept when the form was saved. A separate prompt was required to get ChatGPT to also update the controller logic in the API to actually remove files if necessary.
 5. Next, I had ChatGPT change the front-end route for adding investors from `/add` to `/investors/add`, and the route for editing investors from `/:id` to `/investors/:id`. This added some clarity to the routes themselves, and made it easier to distinguish different types of endpoints in the future.
+
+**Result**
+I was left with a basically functional full-stack application. I didn't spend any time trying to add styling to the user interface, but I believe that ChatGPT could have made those improvements with a few more simple prompts. Additionally, I believe that with more time than the allotted two hours, every item listed in the **What's Left** section below could have been included by ChatGPT with very careful, specific prompting.
+
+## What's Left
+
+The ChatGPT-assisted development process got me further than I was able to get on my own, but after two hours there was still plenty of improvements that could have been made. Some of the [improvements from the non-AI version](https://github.com/natedugg/icapital-no-ai/blob/main/README.md#whats-left) would also apply here, and I've made note of those cases.
+
+- Authentication / authorization: like the non-AI version, this version is also missing authentication using JWT session tokens.
+- Support for large file uploads / downloads
+  - Although file uploads are supported here, it only works with small files. Network bandwidth and local file system constraints currently preclude support for large files.
+  - As described in the [README for the non-AI version](https://github.com/natedugg/icapital-no-ai/blob/main/README.md#whats-left), a far more scalable solution would be to use cloud storage, like AWS S3. This would allow for multi-part uploads and downloads using pre-signed URLs, which would support very large files, as well as resumable downloads and trackable upload progress to facilitate an upload progress bar on the investor form.
+- 
 
 ## Screen shots
 
