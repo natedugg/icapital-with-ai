@@ -15,7 +15,7 @@ I found that AI dramatically sped up the application setup/configuration phase o
 
 My process was iterative, which means I started by asking ChatGPT to build an application satisfying the most basic requirements. Then I added functionality piece by piece, verifying each step as I went.
 
-I was left with a basically functional full-stack application. I didn't spend any time trying to add styling to the user interface, but I believe that ChatGPT could have made those improvements with a few more simple prompts. Additionally, I believe that with more time, every item listed in the **What's Left** section below could have been addressed (or assisted) by an AI with very careful, specific prompting.
+I was left with a basically functional full-stack application. I didn't spend any time trying to add styling to the user interface, but I believe that ChatGPT could have made those improvements, as well. Additionally, I believe that with more time, every item listed in the **What's Left** section below could have been addressed (or assisted) by an AI with very careful, specific prompting.
 
 ## What's Left
 
